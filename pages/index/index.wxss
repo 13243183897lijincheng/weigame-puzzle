@@ -1,0 +1,67 @@
+.container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: grey;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.main{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-right: none;
+  border-bottom: none
+}
+.img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  vertical-align:middle;
+}
+
+.moveBlock{
+  width: 33.33%;
+  height: 25%;
+  position: absolute;
+  border: 0.4px solid #fff;
+  border-top:none;
+  border-left: none;
+  box-sizing: border-box;
+  background-image: url('http://bq-img.peco.uodoo.com/qiqu/img/buz/article/853bc48cfecd833a8a5ceea20692c8d1.jpg');
+}
+
+
+.winner{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left:0;
+  right: 0;
+  background-color: rgba(204, 204, 204, 0.6);
+  z-index: 3
+}
+
+.closeBtn{
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.win_img{
+  width: 320px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 43%;
+  transform: translateX(-50%) translateY(-50%)
+
+}

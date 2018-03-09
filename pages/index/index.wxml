@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <image class='img' src='http://bq-img.peco.uodoo.com/qiqu/img/buz/article/853bc48cfecd833a8a5ceea20692c8d1.jpg'></image> 
+  <view class='main'>
+   <view wx:for="{{moveBlockPos}}" wx:key="{{index}}" 
+      style="background-color:{{index==11?'#fff':''}};background-image:{{index==11?'none':''}};top:{{item.top + '%'}};left:{{item.left + '%'}};background-size:{{screenWidth + 'px ' + screenHeight+'px'}};background-position:{{item.bgLeft+ 'px ' + item.bgTop + 'px'}}" 
+      class='moveBlock' bindtap='tap' data-index='{{index}}'>
+      <!-- {{index}} -->
+      </view>
+  </view>
+  <!-- 胜利之后的弹出层  -->
+  <view class='winner' wx:if="{{succs}}">
+    <image class='closeBtn' bindtap='close' src='../../asset/imgs/icon_close.png'></image>
+    <image class='win_img' src='../../asset/imgs/winner.png'></image>
+  </view>
+</view>
